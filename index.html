@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>upn</title>
+        <link rel="stylesheet" href="css/stil.css">
+        <link href="js_signature/./css/jquery.signaturepad.css" rel="stylesheet">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js_signature/./js/numeric-1.2.6.min.js"></script>
+		<script src="js_signature/./js/bezier.js"></script>
+		<script src="js_signature/./js/jquery.signaturepad.js"></script>
+
+		<script type='text/javascript' src="https://github.com/niklasvh/html2canvas/releases/download/0.4.1/html2canvas.js"></script>
+		<script src="js_signature/./js/json2.min.js"></script>
+    </head>
+    <body>
+
+<div class="glavni">
+
+            <div class="prvi">
+
+                <div class="a1"> UPN QR - potrdilo</div>
+                <div class="a2">Ime plačnika</div>
+                <div class="a3">
+                <textarea style="resize:none;background-color:transparent;width:51mm;height:12mm;border:0px;outline:0px;overflow:hidden;">
+                </textarea>
+                </div>
+                <div class="a4">Namen in rok plačila</div>
+                <div class="a5">
+				<textarea style="resize:none;background-color:transparent;width:51mm;height:7.5mm;border:0px;outline:0px;overflow:hidden;">
+                </textarea>
+				</div>
+                <div class="a6">Znesek</div>
+                <div class="a7">EUR</div>
+                <div class="a8">
+				<input type="number" style="width:39mm;height:3.5mm; border:0px;outline:0px;"/>
+				</div>
+                <div class="a9">IBAN in referenca prejemnika</div>
+                <div class="a10">
+				<textarea style="resize:none;background-color:transparent;width:51mm;height:12mm;border:0px;outline:0px;overflow:hidden;">
+                </textarea>
+				</div>
+                <div class="a11">Ime prejemnika</div>
+                <div class="a12">
+				<textarea style="resize:none;background-color:transparent;width:51mm;height:12mm;border:0px;outline:0px;overflow:hidden;">
+                </textarea>
+				</div>
+                <div class="a14">Prostor za vpise ponudnika plačilnih storitev</div>
+            </div>
+    <div class="podglavni">
+
+        <div class="drugi">
+                <div class="a15"></div>
+                <div class="a16"></div>
+                <div class="a17">Koda QR</div>
+                <div class="a18">IBAN plačnika</div>
+                <div class="a19">Polog</div>
+                <div class="a20">Dvig</div>
+                <div class="a22">
+				<input  type="text" style="width:71mm;height:4mm; border:0px;outline:0px;letter-spacing:2mm;" maxlength="19" class="A22"/>
+				</div>
+                <div class="a23">
+				<label class="container">
+  <input type="checkbox" checked=":not(:checked)">
+  <span class="checkmark"></span>
+</label>
+				</div>
+                <div class="a24">
+				<label class="container">
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+				</div>
+                <div class="a25">
+				<img src="slike\qr.png" id="2"/></div>
+                <div class="a26">Referenca plačnika</div>
+                <div class="a27">
+				<input class="A27" type="text" style="width:15mm;height:4mm; border:0px;outline:0px;letter-spacing:2mm;" maxlength="4"/>
+				</div>
+                <div class="a28">
+				<input class="A28" type="text" style="width:82mm;height:4mm; border:0px;outline:0px;letter-spacing:2mm;" maxlength="22"/>
+				</div>
+                <div class="a29">Ime, ulica in kraj plačnika</div>
+                <div class="a30">
+				<textarea style="overflow:hidden; resize:none;background-color:transparent;width:99mm;height:15mm;border:0px;outline:0px; line-height:4.8mm;">
+                </textarea>
+				</div>
+                <hr class="a31">
+                <hr class="a32">
+                <div class="a33">EUR</div>
+                <div class="a34">Znesek</div>
+                <div class="a35">Datum plačila</div>
+                <div class="a36">Nujno</div>
+                <div class="a37">
+				<input class="A37" type="number" style="width:41mm;height:4mm; border:0px;outline:0px;letter-spacing:1.9mm;" maxlength="11"/>
+				</div>
+                <div class="a38">
+				<input class="A38" type="text" style="width:30mm;height:4mm; border:0px;outline:0px;letter-spacing:1.9mm;" maxlength="8"/>
+				</div>
+                <div class="a39">
+				<label class="container">
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+				</div>
+                <div class="a40">Koda namena</div>
+                <div class="a41">Namen plačila</div>
+                <div class="a42">Rok plačila</div>
+                <div class="a43">
+				<input class="A43" type="text" style="width:15mm;height:4mm; border:0px;outline:0px;letter-spacing:1.9mm;" maxlength="4"/>
+		</div>
+                <div class="a44">
+				<input class="A44" type="text" style="width:93mm;height:4mm; border:0px;outline:0px;letter-spacing:1.9mm;" maxlength="25"/>
+				</div>
+                <div class="a45">
+				<input  class="A45" type="text" style="width:29mm;height:4mm; border:0px;outline:0px;letter-spacing:1.9mm;" maxlength="8" />
+				</div>
+        </div>
+            <div class="tretji">
+
+                <div class="a46">IBAN prejemnika</div>
+                <div class="a47">
+				<input class="A47" type="text" style="width:127mm;height:4mm; border:0px;outline:0px;letter-spacing:1.9mm;" maxlength="32" />
+				</div>
+                <div class="a48">UPN QR</div>
+                <div class="a49">Referenca prejemnika</div>
+                <div class="a50">
+				<input class="A50" type="text" style="width:15mm;height:4mm; border:0px;outline:0px;letter-spacing:1.5mm;" maxlength="4" />
+				</div>
+                <div class="a51">
+				<input class="A51" type="text" style="width:82mm;height:4mm; border:0px;outline:0px;letter-spacing:1.5mm;" maxlength="20" />
+				</div>
+                <div class="a52">
+		<div id="signArea" >
+			<div class="sig sigWrapper" >
+				<div class="typed"></div>
+				<canvas class="sign-pad" id="sign-pad" width="150" height="86.929134"></canvas>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function() {
+				$('#signArea').signaturePad({drawOnly:true, drawBezierCurves:true, lineTop:90});
+			});
+
+			$("#btnSaveSign").click(function(e){
+				html2canvas([document.getElementById('sign-pad')], {
+					onrendered: function (canvas) {
+						var canvas_img_data = canvas.toDataURL('image/png');
+						var img_data = canvas_img_data.replace(/^data:image\/(png|jpg);base64,/, "");
+						//ajax call to save image inside folder
+						$.ajax({
+							url: 'save_sign.php',
+							data: { img_data:img_data },
+							type: 'post',
+							dataType: 'json',
+							success: function (response) {
+							   window.location.reload();
+							}
+						});
+					}
+				});
+			});
+		  </script>
+		</div>
+                <div class="a53">Ime, ulica in kraj prejemnika</div>
+                <div class="a54">
+			    <textarea  style="overflow:hidden; resize:none;background-color:transparent;width:99mm;height:15mm;border:0px;outline:0px; line-height:4.8mm;">
+                </textarea>
+				</div>
+                <div class="a55"></div>
+                <div class="a56"></div>
+                <div class="a57"></div>
+                <div class="a58">Podpis plačnika (neobvezno žig)</div>
+                <div class="a60">Prostor za vpise ponudnika plačilnih storitev</div>
+                <div class="a62"></div>
+
+
+
+            </div>
+    </div>
+
+</div>
+
+
+    </body>
+</html>

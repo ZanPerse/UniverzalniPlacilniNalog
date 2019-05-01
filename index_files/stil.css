@@ -1,0 +1,20 @@
+
+#prvi{
+border:2px black solid;
+height: 600px;
+width: 1000px;    
+}
+
+#block1{
+    background:  lightgrey;
+    width:  300px;
+    display: top;
+}
+
+#block2{
+    background: red;
+}
+
+#block3{
+    background: yellow;
+}
